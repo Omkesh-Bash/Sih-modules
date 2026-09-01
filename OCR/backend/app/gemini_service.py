@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from .schemas import ExtractedRecord
 
 
-load_dotenv()
+load_dotenv(override=True)
 
 MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
